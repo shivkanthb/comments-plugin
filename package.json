@@ -1,0 +1,26 @@
+{
+  "name": "CommentSystem",
+  "version": "1.0.0",
+  "description": "Realtime commenting system in Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivkanthb/CommentSystem.git"
+  },
+  "author": "shiv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shivkanthb/CommentSystem/issues"
+  },
+  "homepage": "https://github.com/shivkanthb/CommentSystem",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "consolidate": "^0.13.1",
+    "express": "^4.13.1",
+    "mongoose": "^4.0.7",
+    "path": "^0.11.14"
+  }
+}
