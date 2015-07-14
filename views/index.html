@@ -1,75 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>daybook</title>
-	<style type="text/css">
-
-	@font-face {
-font-family: "Helvetica Neue";
-font-weight: 700;
-src: url("helvetica-neue-bold.ttf");
-}
-		
-		.header {
-			font-size: 56px;
-			font-family: "Helvetica Neue";
-			color: #333;
-			padding: 0px 10px 0px;
-		}
-		
-		.tagline {
-			font-size: 42px;
-			font-family: "Helvetica Neue";
-			color: #333;
-			padding: 0px 10px 0px;
-		}
-		.signup {
-			font-size: 24px;
-			font-family: "Helvetica Neue";
-			color: #333;
-			padding: 0px 10px 0px;
-		}
-		p{
-			font-weight: 700;
-			font-family: "Helvetica Neue";
-			color: #333;
-			padding: 0px 10px 0px;
-		}
-
-		body
-		{
-			margin-left: 5%;
-		}
-
-		.email, .pass{
-			background: #fff;
-			width: 256px;
-			height: 56px;
-			font-family: "Helvetica Neue";
-			font-size: 18px;
-			color: #000;
-			padding: 0 24px;
-			border-right: transparent;
-			border-top: transparent;
-			border-left: transparent;
-		}
-		.submitButton{
-			background: #fff;
-			width: 308px;
-			height: 60px;
-			font-family: "Helvetica Neue";
-			font-size: 18px;
-			color: #000;
-			padding: 0 24px;
-			border-right: transparent;
-			border-top: transparent;
-			border-left: transparent;
-			text-align: left;
-		}
-	</style>
+	<title>CommentSystem</title>
+	
 </head>
 <body>
-	<div class="header">comment.</div>
-	
+	<div class="header"><h3>comment</h3></div>
+	<!--form method="post"-->
+	 	<input  id="commentByID" type="text" placeholder="name" name="commentBy" /></br>
+	 	<textarea  id="commentBodyID" rows="3" cols="50" placeholder="your comment..." name="commentBody" ></textarea></br>
+	 	<button class="submitButton" id="commentSubmit" >submit</button>
+	 <!--/form-->
+	<div class="comments-section">
+		<template>
+			<h3>{cB}</h3>
+		</template>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="push.js"></script>
 </body>
 </html>
