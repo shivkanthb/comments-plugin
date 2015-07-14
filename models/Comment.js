@@ -4,7 +4,7 @@ var commentSchema = mongoose.Schema({
 
 	commentBody : String,
 	commentBy: String,
-	createdAt : Date
+	createdAt : String
 
 });
 
